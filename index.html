@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oleks Korshak</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://d3js.org/d3.v5.js"></script>
+</head>
+<body>
+<div class="title">
+    <h1>Numbers Game</h1>
+</div>
+<div class="explanation">
+    <h2 style="text-align: center">Rules</h2>
+    To start the game, each player chooses a secret 4 digit number. 
+    Repeating digits not allowed.
+    Then, players take turns guessing the other person's secret number.
+    For each guess, players give a hint as to the accuracy of the guess.
+    The hint consists of two numbers.
+    The first is the number of digits correct and the second is 
+    number of those digits in the correct place.</br>
+    </br>
+    For example, 
+    if the secret number is <span class="secretNumberA">5678</span>
+    and the guess is <span class="correctDigA">8</span><span class="secretNumberA">6</span>2<span class="correctDigA">7</span>, 
+    then the hint is <span class="correctDigA">3</span> <span class="secretNumberA">1</span>.
+    <ul>
+        <li>The first number is <span class="correctDigA">3</span> because <span class="correctDigA">6</span>, <span class="correctDigA">7</span>, and <span class="correctDigA">8</span> are all digits of the secret number.</li>
+        <li>The second number is <span class="secretNumberA">1</span> because <span class="secretNumberA">6</span> is in the correct place in the guess. (Second in both guess and secret number)</li>
+    </ul>
+</div>
+<div class="example">
+    <h2>Example Game</h2>
+    Player A secret number: <span class="secretNumberA">0123</span><br/>
+    Player B secret number: <span class="secretNumberB">5387</span><br/>
+    <h5>Round 1</h5>
+    A guesses 012<span class="correctDigB">3</span>, B gives hint <span class="correctDigB">1</span> <span class="secretNumberB">0</span><br/>
+    B guesses 92<span class="correctDigA">5</span>6, A gives hint <span class="correctDigA">1</span> <span class="secretNumberA">0</span>
+    <h5>Round 2</h5>
+    A guesses 4<span class="correctDigB">5</span>6<span class="secretNumberB">7</span>, B gives hint <span class="correctDigB">2</span> <span class="secretNumberB">1</span><br/>
+    B guesses <span class="secretNumberA">01</span><span class="correctDigA">3</span>4, A gives hint <span class="correctDigA">3</span> <span class="secretNumberA">2</span>
+    <h5>Round 3</h5>
+    A guesses 94<span class="secretNumberB">5</span>2, B gives hint <span class="correctDigB">1</span> <span class="secretNumberB">0</span><br/>
+    B guesses 4<span class="secretNumberA">1</span><span class="correctDigA">3</span>5, A gives hint <span class="correctDigA">2</span> <span class="secretNumberA">1</span>
+    <h5>Round 4</h5>
+    A guesses <span class="correctDigB">37</span>6<span class="correctDigB">8</span>, B gives hint <span class="correctDigB">3</span> <span class="secretNumberB">0</span><br/>
+    B guesses 9<span class="correctDigA">03</span>4, A gives hint <span class="correctDigA">2</span> <span class="secretNumberA">0</span>
+    <h5>Round 5</h5>
+    A guesses 6<span class="secretNumberB">3</span>9<span class="secretNumberB">7</span>, B gives hint <span class="correctDigB">2</span> <span class="secretNumberB">2</span><br/>
+    B guesses <span class="secretNumberA">0123</span>, which is the correct number!<br/>
+    <br/>
+</div>
+
+<script type="application/javascript" src="script.js"></script>
+</body>
+</html>
