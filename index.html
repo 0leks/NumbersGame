@@ -8,10 +8,10 @@
 </head>
 <body>
 
+    <div class="title">
+        <h1>Numbers Game</h1>
+    </div>
     <div class="leftPanel">
-        <div class="title">
-            <h1>Numbers Game</h1>
-        </div>
         <div class="explanation">
             <h2 style="text-align: center">Rules</h2>
             To start the game, each player chooses a secret 4 digit number. 
@@ -54,7 +54,13 @@
         </div>
     </div>
     <div class="game">
-        <h2>Game</h2>
+        <h2>Possibility Helper</h2>
+        Enter the guess and the received hint as a 6 digit number below to narrow down the possibilities.<br/>
+        <input type="text" id="textFieldID">
+        <button onClick="enter()">Enter</button>
+        <button onClick="clearGuesses()">Reset</button><br/>
+        <span id="guessListID" >Zero Guesses so far; try something like 1234.</span><br/>
+        <span id="possListID" >Possibilities: Endless</span><br/>
     </div>
 
     <script type="application/javascript" src="script.js"></script>
